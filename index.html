@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>love</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="style.css">
+  <meta name=" viewport" content="width=device-width   initial-scale=1.0  minimum-scale=1.0  miximum=1.0  user-scalable=yes"/>
+</head>
+<body>
+  <div class='all'>
+  我就知道你爱我
+  </div>
+<div class="new">
+  <h1>新年好，Mrs张</h1>
+  <div class="bt1">
+    好
+  </div>
+</div>
+<div class="love">
+  <h1>我爱你</h1>
+  <h2>你爱我吗?</h2>
+  <ul>
+    <li><button id='lv1' type="button" name="button">我也爱你</button></li>
+    <li><button  id="lv2"type="button" name="button">其他</button></li>
+  </ul>
+</div>
+
+<script type="text/javascript">
+  document.querySelector('.bt1').onclick = function(){
+    document.querySelector('.new').style.display = 'none'
+    document.querySelector('.love').style.display = 'block'
+  }
+  document.querySelector('#lv1').onclick = function(){
+    document.querySelector('.all').style.display = 'block';
+      document.querySelector('.all').innerHTML = '我就知道你爱我'
+  }
+  document.querySelector('#lv2').onclick = function(){
+    document.querySelector('.all').style.display = 'block'
+    document.querySelector('.all').innerHTML = '你一定点错了,请重新选择'
+  }
+  document
+</script>
+</body>
+</html>
